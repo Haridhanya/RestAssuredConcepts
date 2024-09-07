@@ -1,0 +1,44 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name = "objects">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "parsererror">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "h3"/>
+<xs:element  name = "div">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:string" name="style" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:string" name="style" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "object">
+<xs:complexType>
+<xs:sequence>
+<xs:element  name = "id">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:byte">
+<xs:attribute type="xs:string" name="type"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element type = " xs:string" name = "name"/>
+<xs:element type = " xs:string" name = "email"/>
+<xs:element type = " xs:byte" name = "avatar"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type = "xs:string" name = "type"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>

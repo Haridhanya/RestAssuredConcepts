@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+
+  <test name="Test1">
+    <classes>
+      <class name="ApiChaining.CreateUser"/>
+    </classes></test>
+    <test name="Test2">
+      <classes> <class name="ApiChaining.updateUser"/>
+      </classes></test>
+      <test name="Test3">
+    <classes>  
+    <class name="ApiChaining.getUser"/>
+    </classes></test>
+    <test name="Test4">
+    <classes>   
+    <class name="ApiChaining.deleteUser"/>
+    </classes></test>
+  <!-- Test -->
+</suite> <!-- Suite -->
